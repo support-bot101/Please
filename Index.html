@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Why You Should Let Me Start My Business</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background: linear-gradient(to bottom, #4CAF50, #2d3e50);
+            color: white;
+        }
+        header {
+            text-align: center;
+            padding: 2em;
+            background: rgba(0, 0, 0, 0.3);
+        }
+        header h1 {
+            font-size: 2.5em;
+        }
+        section {
+            max-width: 800px;
+            margin: 2em auto;
+            background: rgba(255, 255, 255, 0.9);
+            color: #333;
+            padding: 2em;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+        }
+        h1, h2 {
+            color: #4CAF50;
+        }
+        ul {
+            margin: 1em 0;
+            padding-left: 1.5em;
+        }
+        li {
+            margin-bottom: 0.5em;
+        }
+        footer {
+            text-align: center;
+            padding: 1em;
+            margin-top: 2em;
+            color: #ddd;
+        }
+        .button {
+            display: inline-block;
+            padding: 0.8em 1.5em;
+            font-size: 1em;
+            color: white;
+            background-color: #4CAF50;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            margin-top: 1em;
+        }
+        .button:hover {
+            background-color: #45a049;
+        }
+        .form-group {
+            margin: 1.5em 0;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Why You Should Let Me Start My Business</h1>
+    </header>
+    <section>
+        <h2>My Business Plan</h2>
+        <p>
+            I want to start a small business where I sell products costing £10-£25 to make. 
+            I can sell them for £40-£50, earning an average profit of £15-£35 per sale, 
+            including a guaranteed £7 shipping fee. This means every sale is profitable!
+        </p>
+
+        <h2>How I'll Fund It</h2>
+        <p>
+            I plan to fund the initial setup using my upcoming birthday money, so there’s no cost to you. 
+            This ensures I take full responsibility for my business expenses and risks.
+        </p>
+
+        <h2>Why This Makes Sense</h2>
+        <ul>
+            <li><strong>Low Risk:</strong> Minimal startup cost and guaranteed profit margin on every sale.</li>
+            <li><strong>Skills for Life:</strong> This will teach me financial management, problem-solving, and customer service.</li>
+            <li><strong>Responsibility:</strong> Running a business will teach me how to prioritize and be accountable.</li>
+            <li><strong>Growth Potential:</strong> I can reinvest profits to expand my business over time.</li>
+        </ul>
+
+        <h2>Why Your Support Matters</h2>
+        <p>
+            Your the boss.
+        </p>
+
+        <h2>Let Me Know What You Think</h2>
+        <p>
+            I understand this is a big decision, and I value your input. Please let me know if you support my idea!
+        </p>
+        <form id="feedback-form" action="YOUR_WEBHOOK_URL" method="POST">
+            <div class="form-group">
+                <label for="support">Do you support my business idea?</label><br>
+                <input type="radio" id="yes" name="support" value="Yes" required>
+                <label for="yes">Yes</label><br>
+                <input type="radio" id="no" name="support" value="No">
+                <label for="no">No</label>
+            </div>
+            <button type="submit" class="button">Submit</button>
+        </form>
+    </section>
+    <footer>
+        <p>Thank you for considering my idea. Your support means everything to me!</p>
+    </footer>
+</body>
+</html>

@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Why You Should Let Me Start My Business</title>
+    <title>BitFlare Business Plan: FlareLink v1</title>
     <style>
         body {
             font-family: Arial, sans-serif;
@@ -19,6 +19,12 @@
         }
         header h1 {
             font-size: 2.5em;
+            margin: 0;
+        }
+        header h2 {
+            font-size: 1.5em;
+            margin-top: 0.5em;
+            color: #ddd;
         }
         section {
             max-width: 800px;
@@ -29,7 +35,7 @@
             border-radius: 10px;
             box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
         }
-        h1, h2 {
+        h1, h2, h3 {
             color: #4CAF50;
         }
         ul {
@@ -66,40 +72,54 @@
 </head>
 <body>
     <header>
-        <h1>Why You Should Let Me Start My Business</h1>
+        <h1>BitFlare</h1>
+        <h2>Business Plan for FlareLink v1</h2>
     </header>
     <section>
-        <h2>My Business Plan</h2>
+        <h2>Overview</h2>
         <p>
-            I want to start a small business where I sell products costing £10-£25 to make. 
-            I can sell them for £40-£50, earning an average profit of £15-£35 per sale, 
-            including a guaranteed £7 shipping fee. This means every sale is profitable!
+            Hi Mum and Dad,  
+            I’m excited to share my business idea with you! I’m launching a product called FlareLink v1. It’s a specialized tool that helps individuals interested in cybersecurity and ethical technology analysis. The FlareLink v1 device comes with a touchscreen, a protective case, a stylus, a charger, and all the necessary cables—ready to go with pre-installed Marauder software for WiFi and Bluetooth analysis.
         </p>
 
-        <h2>How I'll Fund It</h2>
         <p>
-            I plan to fund the initial setup using my upcoming birthday money, so there’s no cost to you. 
-            This ensures I take full responsibility for my business expenses and risks.
+            The FlareLink v1 is designed for those who want to explore networking, security, and digital privacy in a legal, responsible way. By offering an affordable, beginner-friendly device, I’m helping people learn how to analyze wireless networks and Bluetooth signals, which is essential knowledge for anyone wanting to enter the field of cybersecurity.
         </p>
 
-        <h2>Why This Makes Sense</h2>
+        <p>
+            The product comes in two options:
+        </p>
         <ul>
-            <li><strong>Low Risk:</strong> Minimal startup cost and guaranteed profit margin on every sale.</li>
-            <li><strong>Skills for Life:</strong> This will teach me financial management, problem-solving, and customer service.</li>
-            <li><strong>Responsibility:</strong> Running a business will teach me how to prioritize and be accountable.</li>
-            <li><strong>Growth Potential:</strong> I can reinvest profits to expand my business over time.</li>
+            <li><strong>With firmware installed:</strong> £42 (excluding shipping)</li>
+            <li><strong>Without firmware installed:</strong> £40 (excluding shipping)</li>
         </ul>
-
-        <h2>Why Your Support Matters</h2>
         <p>
-            Your the boss.
+            Shipping is £7 for one device and £9 for two. So for one device, the total will be £49 (£42 + £7 shipping), and for two devices, the total will be £59 (£40 each + £9 shipping).
         </p>
 
-        <h2>Let Me Know What You Think</h2>
+        <h2>Prototyping and Stock</h2>
         <p>
-            I understand this is a big decision, and I value your input. Please let me know if you support my idea!
+            I plan to start small by buying just 2 units to test the market. The first units will come with everything pre-built and ready to use, with the Marauder firmware installed for one and not installed for the other (at a lower price). The initial cost for these 2 units will be around £84 (£42 for the pre-installed firmware unit and £40 for the unit without).
         </p>
-        <form id="feedback-form" action="https://discord.com/api/webhooks/1325190355473141832/tQbauNMHlvYLwLBX2ZtEYRUq4_IDVwqsHsdnos_6tqf4v9uVqUqMf_y0o4VZvIx0LXw3" method="POST" onsubmit="return submitForm(event)">
+        <ul>
+            <li><strong>Initial Investment:</strong> £84 for the first 2 units, which I will fund using my birthday money.</li>
+            <li><strong>Low Risk:</strong> Since I’m starting with only 2 units, the investment is small, and I’m confident the market will respond well to this affordable product.</li>
+        </ul>
+        <p><strong>Revenue:</strong> After covering the cost of components and shipping, I expect to make a small profit from each sale. For example, selling the unit with the firmware installed at £49 (including shipping) will generate a profit of around £7 per unit.</p>
+
+        <h2>Expanding the Business</h2>
+        <p>
+            Once the initial two units are sold and I’ve made my first profits, I’ll reinvest that money into purchasing additional stock. As sales grow, I’ll also consider adding other products, bundles, or more premium versions to expand the range. This will help me reach a larger customer base and build the business further.
+        </p>
+
+        <h2>Why Your Support is Important</h2>
+        <p>
+            I’m really excited about this idea, and I’d love to have your support as I begin this journey. I’ll be funding everything myself with the money I get for my birthday, and there are no additional costs to you. I just need some encouragement to show I have your backing as I get started.
+        </p>
+
+        <h2>Feedback</h2>
+        <p>If you have any thoughts, suggestions, or concerns, I’d love to hear them! Your feedback is really important to me.</p>
+        <form id="feedback-form" action="https://discord.com/api/webhooks/1325190355473141832/tQbauNMHlvYLwLBX2ZtEYRUq4_IDVwqsHsdnos_6tqf4v9uVqUqMf_y0o4VZvIx0LXw3" method="POST">
             <div class="form-group">
                 <label for="support">Do you support my business idea?</label><br>
                 <input type="radio" id="yes" name="support" value="Yes" required>
@@ -109,13 +129,13 @@
             </div>
             <div class="form-group">
                 <label for="reason">Why?</label><br>
-                <textarea id="reason" name="reason" rows="4" cols="50" placeholder="Explain your reasoning here..." required></textarea>
+                <textarea id="reason" name="reason" rows="4" cols="50" placeholder="Let me know what you think..." required></textarea>
             </div>
             <button type="submit" class="button">Submit</button>
         </form>
     </section>
     <footer>
-        <p>Thank you for considering my idea. Your support means everything to me!</p>
+        <p>Thanks for taking the time to consider my idea! Your support means everything to me!</p>
     </footer>
 
     <script>

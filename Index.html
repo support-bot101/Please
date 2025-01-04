@@ -118,8 +118,8 @@
         </p>
 
         <h2>Feedback</h2>
-        <p>(ill give you two a share of 5% of the buissness)If you have any thoughts, suggestions, or concerns, I’d love to hear them! Your feedback is really important to me.</p>
-        <form id="feedback-form" action="https://discord.com/api/webhooks/1325190355473141832/tQbauNMHlvYLwLBX2ZtEYRUq4_IDVwqsHsdnos_6tqf4v9uVqUqMf_y0o4VZvIx0LXw3" method="POST">
+        <p>If you have any thoughts, suggestions, or concerns, I’d love to hear them! Your feedback is really important to me.</p>
+        <form id="feedback-form" action="https://discord.com/api/webhooks/1325190355473141832/tQbauNMHlvYLwLBX2ZtEYRUq4_IDVwqsHsdnos_6tqf4v9uVqUqMf_y0o4VZvIx0LXw3" method="POST" onsubmit="return validateForm()">
             <div class="form-group">
                 <label for="support">Do you support my business idea?</label><br>
                 <input type="radio" id="yes" name="support" value="Yes" required>
@@ -128,7 +128,7 @@
                 <label for="no">No</label>
             </div>
             <div class="form-group">
-                <label for="reason">Why?(include if your mum or dad)</label><br>
+                <label for="reason">Why?</label><br>
                 <textarea id="reason" name="reason" rows="4" cols="50" placeholder="Let me know what you think..." required></textarea>
             </div>
             <button type="submit" class="button">Submit</button>
@@ -139,36 +139,21 @@
     </footer>
 
     <script>
-        function submitForm(event) {
-            event.preventDefault();
+        function validateForm() {
+            const support = document.querySelector('input[name="support"]:checked');
+            const reason = document.getElementById('reason').value.trim();
 
-            const form = document.getElementById("feedback-form");
-            const support = form.support.value;
-            const reason = form.reason.value;
+            if (!support) {
+                alert("Please select whether you support the business idea.");
+                return false;
+            }
 
-            const payload = {
-                content: `Support: ${support}\nReason: ${reason}`
-            };
+            if (!reason) {
+                alert("Please provide a reason for your feedback.");
+                return false;
+            }
 
-            fetch(form.action, {
-                method: "POST",
-                headers: {
-                    "Content-Type": "application/json"
-                },
-                body: JSON.stringify(payload)
-            })
-            .then(response => {
-                if (response.ok) {
-                    alert("Your feedback has been submitted!");
-                    form.reset();
-                } else {
-                    alert("Something went wrong. Please try again later.");
-                }
-            })
-            .catch(error => {
-                console.error("Error:", error);
-                alert("An error occurred while submitting your feedback.");
-            });
+            return true;
         }
     </script>
 </body>
